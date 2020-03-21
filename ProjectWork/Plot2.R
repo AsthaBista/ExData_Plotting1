@@ -1,4 +1,3 @@
-
 ## Install the required packages and load them
 library(dplyr)
 library(data.table)
