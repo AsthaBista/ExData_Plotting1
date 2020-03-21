@@ -16,7 +16,6 @@ powerConsum<- fread('household_power_consumption.txt',na.strings = '?')
 powerConsum$Date<-as.Date(powerConsum$Date, format="%d/%m/%Y")
 selectedData<-subset(powerConsum, Date == "2007-02-01" | Date =="2007-02-02")
 
-
 ## Plot 4:
 #Combine the continuity of hours and minutes with date into 'DateTime' column
 DateTime<-strptime(paste(selectedData$Date,selectedData$Time), "%Y-%m-%d %H:%M:%S")
